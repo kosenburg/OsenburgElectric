@@ -28,7 +28,7 @@ body {
 .fa {
   font-size: 55px; }
 
-#home-heading {
+#about-heading {
   position: relative;
   min-height: 200px;
   background: url("../img/BlurLeds.jpg");
@@ -45,16 +45,17 @@ body {
   width: 100%;
   height: 100%; }
 
-#video-play {
+#what-we-do-heading {
   position: relative;
   min-height: 200px;
-  background: url("../img/media.jpg");
+  background: url("../img/brickwall.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: 0 -300px;
+  opacity: 80%;
   text-align: center;
   color: #fff; }
-  #video-play a {
+  #what-we-do-heading a {
     color: #fff; }
 
 footer#main-footer {

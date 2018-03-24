@@ -9,25 +9,28 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.css" />
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
 </head>
 <body>
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <div class="container">
       <a href="index.html" class="navbar-brand">Osenburg Electric</a>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#navNavbar"><span class="navbar-toggler-icon"></span></button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
             <a href="index.html" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#home-heading" class="nav-link">About Us</a>
+            <a href="#services-section" class="nav-link">Services</a>
           </li>
           <li class="nav-item">
-            <a href="services.html" class="nav-link">Services</a>
+            <a href="#about-heading" class="nav-link">About Us</a>
           </li>
           <li class="nav-item">
-            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="#main-footer" class="nav-link">Contact</a>
           </li>
         </ul>
       </div>
@@ -47,7 +50,7 @@
           <div class="container">
             <div class="carousel-caption d-none d-sm-block text-right mb-5">
               <h1 class="display-3">Residential</h1>
-              <a href="#home-icons" class="btn btn-danger btn-lg">Learn More</a>
+              <a href="#services-section" class="btn btn-danger btn-lg">Learn More</a>
             </div>
           </div>
         </div>
@@ -56,7 +59,7 @@
           <div class="container">
             <div class="carousel-caption d-none d-sm-block mb-5">
               <h1 class="display-3">Commerical</h1>
-              <a href="#home-icons" class="btn btn-primary btn-lg">Learn More</a>
+              <a href="#services-section" class="btn btn-primary btn-lg">Learn More</a>
             </div>
           </div>
         </div>
@@ -65,7 +68,7 @@
           <div class="container">
             <div class="carousel-caption d-none d-sm-block text-left mb-5 text-light">
               <h1 class="display-3">Solar</h1>
-              <a href="#home-icons" class="btn btn-success btn-lg">Learn More</a>
+              <a href="#services-section" class="btn btn-success btn-lg">Learn More</a>
             </div>
           </div>
         </div>
@@ -82,7 +85,7 @@
   </section>
 
   <!-- HOME ICON SECTION -->
-  <section id="home-icons" class="py-5">
+  <section id="services-section" class="py-5">
     <div class="container">
       <div class="row">
         <div class="col-md-4 mb-4 text-center">
@@ -101,11 +104,14 @@
           <p>We believe renewable energy is important. We have extensive experience in both commerical and residential renewable energy construction.</p>
         </div>
       </div>
+      <div class="col text-center">
+        <a href="#main-footer" class="btn btn-outline-danger btn-lg">Contact Us</a>
+      </div>
     </div>
   </section>
 
-  <!-- HOME HEADING SECTION -->
-  <section id="home-heading" class="p-5">
+  <!-- ABOUT HEADING SECTION -->
+  <section id="about-heading" class="p-5">
     <div class="dark-overlay">
       <div class="row">
         <div class="col">
@@ -123,24 +129,46 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 align-self-center">
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, dolorum?</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae eaque quos eligendi, laboriosam. Culpa consequuntur illum facere id molestias.</p>
-          <a href="#" class="btn btn-outline-danger btn-lg">Contact Us</a>
-        </div>
-        <div class="col-md-6">
-          <img src="img/thoughtBubble.jpg" class="img-fluid" alt="">
+            <div class="d-flex flex-row">
+              <div class="p-4 align-self-start">
+                <i class="fa fa-check"></i>
+              </div>
+              <div class="p-4 align-self-end">
+                  Family owned, fully licensed and insured with over 20 years of experience.
+              </div>
+            </div>
+            <div class="d-flex flex-row">
+              <div class="p-4 align-self-start">
+                <i class="fa fa-check"></i>
+              </div>
+              <div class="p-4 align-self-end">
+                  Jobs small and large are performed with the utmost attention to detail that you deserve.
+              </div>
+            </div>
+            <div class="d-flex flex-row">
+                <div class="p-4 align-self-start">
+                  <i class="fa fa-check"></i>
+                </div>
+                <div class="p-4 align-self-end">
+                    Customer service is our highest priority, with a goal to give each customer the greatest level of service they have ever experienced.
+                </div>
+              </div>
+          </div>
+        <div class="col-md-6 d-none d-md-block">
+          <img src="img/thoughtBubble.jpg" class="img-fluid img-fluid mb-3 rounded-circle" alt="" >
         </div>
       </div>
     </div>
   </section>
 
   <!-- See what we do section -->
-  <section id="video-play">
-    <div class="dark-overlay">
+  <section id="what-we-do-heading">
+    <div class="dark-overlay d-none d-sm-block">
       <div class="row">
         <div class="col">
           <div class="container p-5">
             <h1>See What We Do</h1>
+            <p class="d-none d-md-block">Check out our photos!</p>
           </div>
         </div>
       </div>
@@ -149,9 +177,8 @@
 
   <!-- PHOTO GALLERY -->
   <section id="gallery" class="py-5">
-    <div class="container">
-      <h1 class="text-center">Photo Gallery</h1>
-      <p class="text-center">Check out our photos</p>
+    <div class="container d-none d-sm-block">
+      <br>
       <div class="row mb-4">
         <div class="col-md-4"> 
           <a href="img/jt.jpg" data-toggle="lightbox" data-gallery="img-gallery">
@@ -164,8 +191,8 @@
           </a>
         </div>
         <div class="col-md-4">
-          <a href="img/deskLights.jpg" data-toggle="lightbox" data-gallery="img-gallery">
-            <img src="img/deskLights.jpg" class="img-fluid">
+          <a href="img/steps.jpg" data-toggle="lightbox" data-gallery="img-gallery">
+            <img src="img/steps.jpg" class="img-fluid">
           </a>
         </div>
       </div>
@@ -190,53 +217,61 @@
     </div>
   </section>
 
-  <!-- NEWSLETTER SECTION -->
-  <section id="newsletter" class="text-center p-5 bg-dark text-white">
+  <!-- TESTIMONIALS -->
+  <section id="testimonial-section" class="p-4 bg-dark text-white">
     <div class="container">
+      <h2 class="text-center">Testimonials</h2>
       <div class="row">
         <div class="col">
-          <h1>Signup For Our Newsletter</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis magnam similique esse assumenda quasi repellendus illum perferendis quos aliquid possimus.</p>
-          <form class="form-inline justify-content-center">
-            <label class="sr-only" for="name">Name</label>
-            <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="Enter Name">
-
-            <label class="sr-only" for="email">Email</label>
-            <input type="email" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="Enter Email">
-            <button class="btn btn-primary" type="submit">Submit</button>
-          </form>
+          <div class="slider">
+            <div>
+              <blockquote class="blockquote">
+                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, sunt!</p>
+                <footer class="blockquote-footer">John Doe From <cite title="Company 1">Company 1</cite></footer>
+              </blockquote>
+            </div>
+            <div>
+              <blockquote class="blockquote">
+                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, sunt!</p>
+                <footer class="blockquote-footer">Steve Smith From <cite title="Company 2">Company 2</cite></footer>
+              </blockquote>
+            </div>
+            <div>
+              <blockquote class="blockquote">
+                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, sunt!</p>
+                <footer class="blockquote-footer">Megan Williams From <cite title="Company 3">Company 3</cite></footer>
+              </blockquote>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
+
   <footer id="main-footer" class="text-center p-4">
     <div class="container">
       <div class="row">
         <div class="col">
-          <p>Copyright 2017 &copy; Osenburg Electric</p>
+          <p>Copyright 2018 &copy; Osenburg Electric</p>
         </div>
+      </div>
+      <div class="row">
+          <div class="col-md-6 text-right">
+              <p class="mb-0"><a href="tel:+4109352061" class="mb-0">Call Us</a></p>
+          </div>
+          <div class="col-md-6 text-left">
+            <p class="mb-0"><a href="mailto:gosenburg@osenburgelectric.com" target="_top">Email Us</a></p>
+          </div>
       </div>
     </div>
   </footer>
-
-
-  <!-- VIDEO MODAL -->
-  <div class="modal fade" id="videoModal">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-body">
-          <button class="close" data-dismiss="modal"><span>&times;</span></button>
-          <iframe src="" height="350" width="100%" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.js"></script>
+  <script src="js/slick.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
