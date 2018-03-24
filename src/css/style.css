@@ -18,11 +18,11 @@ body {
   background-size: cover; }
 
 .carousel-image-2 {
-  background: url("../img/brick-brickwall-brickwork.jpg");
+  background: url("../img/pipes.jpg");
   background-size: cover; }
 
 .carousel-image-3 {
-  background: url("../img/BlurBrightBulb.jpg");
+  background: url("../img/DarkSolar.jpg");
   background-size: cover; }
 
 .fa {
@@ -31,7 +31,7 @@ body {
 #home-heading {
   position: relative;
   min-height: 200px;
-  background: url("../img/lights.jpg");
+  background: url("../img/BlurLeds.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   text-align: center;
