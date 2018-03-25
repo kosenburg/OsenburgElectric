@@ -45,7 +45,7 @@ body {
   width: 100%;
   height: 100%; }
 
-#what-we-do-heading {
+#what-we-do-heading, #contact {
   position: relative;
   min-height: 200px;
   background: url("../img/brickwall.jpg");
@@ -55,7 +55,7 @@ body {
   opacity: 80%;
   text-align: center;
   color: #fff; }
-  #what-we-do-heading a {
+  #what-we-do-heading a, #contact a {
     color: #fff; }
 
 footer#main-footer {
