@@ -3,8 +3,14 @@ body {
 }
 
 .navbar .nav-link {
-  font-size: 14px;
+  font-size: 18px;
   text-transform: uppercase;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.navbar-brand {
+  font-size: 25px;
   padding-left: 1rem !important;
   padding-right: 1rem !important;
 }
