@@ -35,7 +35,7 @@ body {
 #home-heading {
   position: relative;
   min-height: 200px;
-  background: url("../img/lights.jpg");
+  background: url("../img/blur-bulbs-close-up.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   text-align: center;
@@ -54,7 +54,7 @@ body {
 #video-play {
   position: relative;
   min-height: 200px;
-  background: url("../img/media.jpg");
+  background: url("../img/cables-close-up-computer.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: 0 -300px;
