@@ -19,8 +19,15 @@ body {
   border-left: #444 3px solid;
 }
 
+@media (max-width: 800px) {
+  #myCarousel {
+    display: none !important;
+  }
+}
+
 .carousel-item {
   height: 600px;
+  position: relative;
 }
 
 .carousel-image-1 {
